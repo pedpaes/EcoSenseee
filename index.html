@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#05070b">
+
+    <title>ECOSENSE | Technology Project</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <img src="logo.png" alt="ECOSENSE">
+    <span>TECHNOLOGY PROJECT</span>
+</header>
+
+<section class="hero">
+
+    <img src="logo.png" alt="ECOSENSE Logo">
+
+    <div class="eyebrow">INNOVATION & TECHNOLOGY</div>
+
+    <h1>Tecnologia que transforma.</h1>
+
+    <p>
+        Conheça o funcionamento do nosso projeto,
+        desenvolvido com Arduino e tecnologia inteligente.
+    </p>
+
+    <div class="status-pill">
+        <span class="status-dot"></span>
+        SISTEMA EM DESENVOLVIMENTO
+    </div>
+
+</section>
+
+<main class="container">
+
+    <div class="section-title">
+        <div>
+            <div class="eyebrow">SOURCE CODE</div>
+            <h2>Código-fonte do projeto</h2>
+            <p>Explore a programação utilizada no desenvolvimento do ECOSENSE.</p>
+        </div>
+
+        <span class="language-tag">C++ / ARDUINO</span>
+    </div>
+
+    <div class="editor" id="editor">
+
+        <div class="editor-header">
+
+            <div class="file-info">
+                <span class="file-icon">●</span>
+                <span class="filename">ecosense.ino</span>
+            </div>
+
+            <div class="editor-actions">
+
+                <span class="status" id="status">● READY</span>
+
+                <button class="fullscreen-btn" onclick="toggleFullscreen()">
+                    ⛶ TELA CHEIA <kbd>F</kbd>
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="code-area" id="codeArea">
+
+            <div class="numbers" id="numbers">1</div>
+
+            <pre><code id="output"></code><span class="cursor" id="cursor"></span></pre>
+
+        </div>
+
+        <div class="editor-footer">
+            <span id="modeText">MODO: DIGITAÇÃO AUTOMÁTICA</span>
+            <span>ARDUINO IDE / C++</span>
+        </div>
+
+    </div>
+
+    <div class="controls">
+
+        <button class="primary" onclick="start()">▶ INICIAR</button>
+
+        <button onclick="pause()">Ⅱ PAUSAR</button>
+
+        <button onclick="reset()">↻ REINICIAR</button>
+
+        <button onclick="toggleNormalMode()" id="normalButton">
+            CÓDIGO NORMAL <kbd>B</kbd>
+        </button>
+
+        <button onclick="copyCode()">▣ COPIAR CÓDIGO</button>
+
+    </div>
+
+    <p class="hint">
+        <kbd>ESPAÇO</kbd> Pausar / continuar
+        <span>·</span>
+        <kbd>F</kbd> Tela cheia
+        <span>·</span>
+        <kbd>B</kbd> Código normal
+        <span>·</span>
+        <kbd>ESC</kbd> Sair
+    </p>
+
+</main>
+
+<footer>
+
+    <div class="footer-brand">ECOSENSE</div>
+
+    <p>INOVAÇÃO, TECNOLOGIA E SUSTENTABILIDADE.</p>
+
+    <span>© 2026 ECOSENSE — TODOS OS DIREITOS RESERVADOS</span>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
